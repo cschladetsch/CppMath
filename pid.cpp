@@ -10,12 +10,11 @@ using namespace std;
 class PIDImpl
 {
     public:
-        PIDImpl( double dt, double max, double min, double Kp, double Kd, double Ki );
+        PIDImpl(double max, double min, double Kp, double Kd, double Ki );
         ~PIDImpl();
-        double calculate( double setpoint, double pv );
+        double calculate(double setpoint, double pv, double dt);
 
     private:
-        double _dt;
         double _max;
         double _min;
         double _Kp;
@@ -26,13 +25,13 @@ class PIDImpl
 };
 
 
-PID::PID( double dt, double max, double min, double Kp, double Kd, double Ki )
+PID::PID(double max, double min, double Kp, double Kd, double Ki )
 {
-    pimpl = new PIDImpl(dt,max,min,Kp,Kd,Ki);
+    pimpl = new PIDImpl(max,min,Kp,Kd,Ki);
 }
-double PID::calculate( double setpoint, double pv )
+double PID::calculate(double setpoint, double pv, double dt)
 {
-    return pimpl->calculate(setpoint,pv);
+    return pimpl->calculate(setpoint,pv, dt);
 }
 PID::~PID() 
 {
@@ -43,8 +42,7 @@ PID::~PID()
 /**
  * Implementation
  */
-PIDImpl::PIDImpl( double dt, double max, double min, double Kp, double Kd, double Ki ) :
-    _dt(dt),
+PIDImpl::PIDImpl(double max, double min, double Kp, double Kd, double Ki) :
     _max(max),
     _min(min),
     _Kp(Kp),
@@ -55,9 +53,8 @@ PIDImpl::PIDImpl( double dt, double max, double min, double Kp, double Kd, doubl
 {
 }
 
-double PIDImpl::calculate( double setpoint, double pv )
+double PIDImpl::calculate(double setpoint, double pv, double dt)
 {
-    
     // Calculate error
     double error = setpoint - pv;
 
@@ -65,11 +62,11 @@ double PIDImpl::calculate( double setpoint, double pv )
     double Pout = _Kp * error;
 
     // Integral term
-    _integral += error * _dt;
+    _integral += error * dt;
     double Iout = _Ki * _integral;
 
     // Derivative term
-    double derivative = (error - _pre_error) / _dt;
+    double derivative = (error - _pre_error) /dt;
     double Dout = _Kd * derivative;
 
     // Calculate total output
