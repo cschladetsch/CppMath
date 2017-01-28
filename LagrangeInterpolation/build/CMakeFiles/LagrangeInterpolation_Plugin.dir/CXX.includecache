@@ -1,0 +1,40 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/christian/Local/Math/LagrangeInterpolation/lagrange_interp_nd.cpp
+cstdlib
+-
+iostream
+-
+cmath
+-
+ctime
+-
+cstring
+-
+lagrange_interp_nd.hpp
+/Users/christian/Local/Math/LagrangeInterpolation/lagrange_interp_nd.hpp
+
+/Users/christian/Local/Math/LagrangeInterpolation/lagrange_interp_nd.hpp
+
+/Users/christian/Local/Math/LagrangeInterpolation/lagrange_interp_nd_prb.cpp
+cstdlib
+-
+iostream
+-
+iomanip
+-
+cmath
+-
+ctime
+-
+cstring
+-
+lagrange_interp_nd.hpp
+/Users/christian/Local/Math/LagrangeInterpolation/lagrange_interp_nd.hpp
+
