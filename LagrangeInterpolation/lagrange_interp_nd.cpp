@@ -8,14 +8,30 @@ using namespace std;
 
 # include "lagrange_interp_nd.hpp"
 
-extern "C" {
-int TestFromCpp()
+struct V3
 {
-	cout << "test" << endl;
-	return 42;
-}
-}
+  float x, y, z;
+};
 
+extern "C" {
+
+  int HelloFromCpp()
+  {
+//    cout << "test" << endl;
+    return 42;
+  }
+
+  int Entry2(V3 p[], int n)
+  {
+    return 456;
+  }
+
+  int Entry3(V3 *p)
+  {
+    return 123;
+  }
+
+}
 //****************************************************************************80
 
 double *cc_compute_points ( int n )
@@ -55,7 +71,8 @@ double *cc_compute_points ( int n )
   double pi = 3.141592653589793;
   double *x;
 
-	TestFromCpp();
+	HelloFromCpp();
+
   if ( n < 1 )
   {
     cerr << "\n";

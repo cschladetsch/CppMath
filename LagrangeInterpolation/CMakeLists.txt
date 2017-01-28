@@ -16,14 +16,3 @@ set(LIBRARY_OUTPUT_PATH ${TARGET_PATH})
 
 add_library(${PROJECT_NAME} SHARED ${SOURCE_FILES})
 
-# add_custom_command(TARGET ${PROJECT_NAME}
-#         POST_BUILD 
-#         COMMAND echo ooooo ${CMAKE_LIBRARY_PATH}
-#         WORKING_DIRECTORY ${CMAKE_HOME_DIRECTORY}/build
-#         DEPENDS ${PROJECT_NAME}
-#         )
-
-# add_dependencies(${PROECT_NAME} foo)
-
-
-
