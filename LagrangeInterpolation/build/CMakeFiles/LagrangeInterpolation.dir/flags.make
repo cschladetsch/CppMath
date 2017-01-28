@@ -4,7 +4,7 @@
 # compile CXX with /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++
 CXX_FLAGS = -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk -mmacosx-version-min=10.11 -fPIC   -std=gnu++11
 
-CXX_DEFINES = -DLagrangeInterpolation_Plugin_EXPORTS
+CXX_DEFINES = -DLagrangeInterpolation_EXPORTS
 
 CXX_INCLUDES = 
 

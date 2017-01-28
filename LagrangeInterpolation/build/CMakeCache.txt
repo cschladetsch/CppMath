@@ -188,10 +188,13 @@ CMAKE_VERBOSE_MAKEFILE:BOOL=FALSE
 LagrangeInterpolation_BINARY_DIR:STATIC=/Users/christian/Local/Math/LagrangeInterpolation/build
 
 //Dependencies for target
-LagrangeInterpolation_Plugin_LIB_DEPENDS:STATIC=
+LagrangeInterpolation_LIB_DEPENDS:STATIC=
 
 //Value Computed by CMake
 LagrangeInterpolation_SOURCE_DIR:STATIC=/Users/christian/Local/Math/LagrangeInterpolation
+
+//Dependencies for target
+foo_LIB_DEPENDS:STATIC=
 
 
 ########################

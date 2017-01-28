@@ -4,8 +4,8 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/Users/christian/Local/Math/LagrangeInterpolation/lagrange_interp_nd.cpp" "/Users/christian/Local/Math/LagrangeInterpolation/build/CMakeFiles/LagrangeInterpolation_Plugin.dir/lagrange_interp_nd.cpp.o"
-  "/Users/christian/Local/Math/LagrangeInterpolation/lagrange_interp_nd_prb.cpp" "/Users/christian/Local/Math/LagrangeInterpolation/build/CMakeFiles/LagrangeInterpolation_Plugin.dir/lagrange_interp_nd_prb.cpp.o"
+  "/Users/christian/Local/Math/LagrangeInterpolation/lagrange_interp_nd.cpp" "/Users/christian/Local/Math/LagrangeInterpolation/build/CMakeFiles/LagrangeInterpolation.dir/lagrange_interp_nd.cpp.o"
+  "/Users/christian/Local/Math/LagrangeInterpolation/lagrange_interp_nd_prb.cpp" "/Users/christian/Local/Math/LagrangeInterpolation/build/CMakeFiles/LagrangeInterpolation.dir/lagrange_interp_nd_prb.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "AppleClang")
 

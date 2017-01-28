@@ -60,39 +60,39 @@ CMAKE_SOURCE_DIR = /Users/christian/Local/Math/LagrangeInterpolation
 CMAKE_BINARY_DIR = /Users/christian/Local/Math/LagrangeInterpolation/build
 
 #=============================================================================
-# Target rules for target CMakeFiles/LagrangeInterpolation_Plugin.dir
+# Target rules for target CMakeFiles/LagrangeInterpolation.dir
 
 # All Build rule for target.
-CMakeFiles/LagrangeInterpolation_Plugin.dir/all:
-	$(MAKE) -f CMakeFiles/LagrangeInterpolation_Plugin.dir/build.make CMakeFiles/LagrangeInterpolation_Plugin.dir/depend
-	$(MAKE) -f CMakeFiles/LagrangeInterpolation_Plugin.dir/build.make CMakeFiles/LagrangeInterpolation_Plugin.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/christian/Local/Math/LagrangeInterpolation/build/CMakeFiles --progress-num=1,2,3 "Built target LagrangeInterpolation_Plugin"
-.PHONY : CMakeFiles/LagrangeInterpolation_Plugin.dir/all
+CMakeFiles/LagrangeInterpolation.dir/all:
+	$(MAKE) -f CMakeFiles/LagrangeInterpolation.dir/build.make CMakeFiles/LagrangeInterpolation.dir/depend
+	$(MAKE) -f CMakeFiles/LagrangeInterpolation.dir/build.make CMakeFiles/LagrangeInterpolation.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/christian/Local/Math/LagrangeInterpolation/build/CMakeFiles --progress-num=1,2,3 "Built target LagrangeInterpolation"
+.PHONY : CMakeFiles/LagrangeInterpolation.dir/all
 
 # Include target in all.
-all: CMakeFiles/LagrangeInterpolation_Plugin.dir/all
+all: CMakeFiles/LagrangeInterpolation.dir/all
 
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/LagrangeInterpolation_Plugin.dir/rule: cmake_check_build_system
+CMakeFiles/LagrangeInterpolation.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/christian/Local/Math/LagrangeInterpolation/build/CMakeFiles 3
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/LagrangeInterpolation_Plugin.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/LagrangeInterpolation.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/christian/Local/Math/LagrangeInterpolation/build/CMakeFiles 0
-.PHONY : CMakeFiles/LagrangeInterpolation_Plugin.dir/rule
+.PHONY : CMakeFiles/LagrangeInterpolation.dir/rule
 
 # Convenience name for target.
-LagrangeInterpolation_Plugin: CMakeFiles/LagrangeInterpolation_Plugin.dir/rule
+LagrangeInterpolation: CMakeFiles/LagrangeInterpolation.dir/rule
 
-.PHONY : LagrangeInterpolation_Plugin
-
-# clean rule for target.
-CMakeFiles/LagrangeInterpolation_Plugin.dir/clean:
-	$(MAKE) -f CMakeFiles/LagrangeInterpolation_Plugin.dir/build.make CMakeFiles/LagrangeInterpolation_Plugin.dir/clean
-.PHONY : CMakeFiles/LagrangeInterpolation_Plugin.dir/clean
+.PHONY : LagrangeInterpolation
 
 # clean rule for target.
-clean: CMakeFiles/LagrangeInterpolation_Plugin.dir/clean
+CMakeFiles/LagrangeInterpolation.dir/clean:
+	$(MAKE) -f CMakeFiles/LagrangeInterpolation.dir/build.make CMakeFiles/LagrangeInterpolation.dir/clean
+.PHONY : CMakeFiles/LagrangeInterpolation.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/LagrangeInterpolation.dir/clean
 
 .PHONY : clean
 

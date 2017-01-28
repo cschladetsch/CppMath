@@ -1,12 +1,12 @@
 [
 {
   "directory": "/Users/christian/Local/Math/LagrangeInterpolation/build",
-  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   -DLagrangeInterpolation_Plugin_EXPORTS  -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk -mmacosx-version-min=10.11 -fPIC   -std=gnu++11 -o CMakeFiles/LagrangeInterpolation_Plugin.dir/lagrange_interp_nd.cpp.o -c /Users/christian/Local/Math/LagrangeInterpolation/lagrange_interp_nd.cpp",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   -DLagrangeInterpolation_EXPORTS  -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk -mmacosx-version-min=10.11 -fPIC   -std=gnu++11 -o CMakeFiles/LagrangeInterpolation.dir/lagrange_interp_nd.cpp.o -c /Users/christian/Local/Math/LagrangeInterpolation/lagrange_interp_nd.cpp",
   "file": "/Users/christian/Local/Math/LagrangeInterpolation/lagrange_interp_nd.cpp"
 },
 {
   "directory": "/Users/christian/Local/Math/LagrangeInterpolation/build",
-  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   -DLagrangeInterpolation_Plugin_EXPORTS  -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk -mmacosx-version-min=10.11 -fPIC   -std=gnu++11 -o CMakeFiles/LagrangeInterpolation_Plugin.dir/lagrange_interp_nd_prb.cpp.o -c /Users/christian/Local/Math/LagrangeInterpolation/lagrange_interp_nd_prb.cpp",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   -DLagrangeInterpolation_EXPORTS  -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk -mmacosx-version-min=10.11 -fPIC   -std=gnu++11 -o CMakeFiles/LagrangeInterpolation.dir/lagrange_interp_nd_prb.cpp.o -c /Users/christian/Local/Math/LagrangeInterpolation/lagrange_interp_nd_prb.cpp",
   "file": "/Users/christian/Local/Math/LagrangeInterpolation/lagrange_interp_nd_prb.cpp"
 }
 ]

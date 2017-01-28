@@ -111,17 +111,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named LagrangeInterpolation_Plugin
+# Target rules for targets named LagrangeInterpolation
 
 # Build rule for target.
-LagrangeInterpolation_Plugin: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 LagrangeInterpolation_Plugin
-.PHONY : LagrangeInterpolation_Plugin
+LagrangeInterpolation: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 LagrangeInterpolation
+.PHONY : LagrangeInterpolation
 
 # fast build rule for target.
-LagrangeInterpolation_Plugin/fast:
-	$(MAKE) -f CMakeFiles/LagrangeInterpolation_Plugin.dir/build.make CMakeFiles/LagrangeInterpolation_Plugin.dir/build
-.PHONY : LagrangeInterpolation_Plugin/fast
+LagrangeInterpolation/fast:
+	$(MAKE) -f CMakeFiles/LagrangeInterpolation.dir/build.make CMakeFiles/LagrangeInterpolation.dir/build
+.PHONY : LagrangeInterpolation/fast
 
 lagrange_interp_nd.o: lagrange_interp_nd.cpp.o
 
@@ -129,7 +129,7 @@ lagrange_interp_nd.o: lagrange_interp_nd.cpp.o
 
 # target to build an object file
 lagrange_interp_nd.cpp.o:
-	$(MAKE) -f CMakeFiles/LagrangeInterpolation_Plugin.dir/build.make CMakeFiles/LagrangeInterpolation_Plugin.dir/lagrange_interp_nd.cpp.o
+	$(MAKE) -f CMakeFiles/LagrangeInterpolation.dir/build.make CMakeFiles/LagrangeInterpolation.dir/lagrange_interp_nd.cpp.o
 .PHONY : lagrange_interp_nd.cpp.o
 
 lagrange_interp_nd.i: lagrange_interp_nd.cpp.i
@@ -138,7 +138,7 @@ lagrange_interp_nd.i: lagrange_interp_nd.cpp.i
 
 # target to preprocess a source file
 lagrange_interp_nd.cpp.i:
-	$(MAKE) -f CMakeFiles/LagrangeInterpolation_Plugin.dir/build.make CMakeFiles/LagrangeInterpolation_Plugin.dir/lagrange_interp_nd.cpp.i
+	$(MAKE) -f CMakeFiles/LagrangeInterpolation.dir/build.make CMakeFiles/LagrangeInterpolation.dir/lagrange_interp_nd.cpp.i
 .PHONY : lagrange_interp_nd.cpp.i
 
 lagrange_interp_nd.s: lagrange_interp_nd.cpp.s
@@ -147,7 +147,7 @@ lagrange_interp_nd.s: lagrange_interp_nd.cpp.s
 
 # target to generate assembly for a file
 lagrange_interp_nd.cpp.s:
-	$(MAKE) -f CMakeFiles/LagrangeInterpolation_Plugin.dir/build.make CMakeFiles/LagrangeInterpolation_Plugin.dir/lagrange_interp_nd.cpp.s
+	$(MAKE) -f CMakeFiles/LagrangeInterpolation.dir/build.make CMakeFiles/LagrangeInterpolation.dir/lagrange_interp_nd.cpp.s
 .PHONY : lagrange_interp_nd.cpp.s
 
 lagrange_interp_nd_prb.o: lagrange_interp_nd_prb.cpp.o
@@ -156,7 +156,7 @@ lagrange_interp_nd_prb.o: lagrange_interp_nd_prb.cpp.o
 
 # target to build an object file
 lagrange_interp_nd_prb.cpp.o:
-	$(MAKE) -f CMakeFiles/LagrangeInterpolation_Plugin.dir/build.make CMakeFiles/LagrangeInterpolation_Plugin.dir/lagrange_interp_nd_prb.cpp.o
+	$(MAKE) -f CMakeFiles/LagrangeInterpolation.dir/build.make CMakeFiles/LagrangeInterpolation.dir/lagrange_interp_nd_prb.cpp.o
 .PHONY : lagrange_interp_nd_prb.cpp.o
 
 lagrange_interp_nd_prb.i: lagrange_interp_nd_prb.cpp.i
@@ -165,7 +165,7 @@ lagrange_interp_nd_prb.i: lagrange_interp_nd_prb.cpp.i
 
 # target to preprocess a source file
 lagrange_interp_nd_prb.cpp.i:
-	$(MAKE) -f CMakeFiles/LagrangeInterpolation_Plugin.dir/build.make CMakeFiles/LagrangeInterpolation_Plugin.dir/lagrange_interp_nd_prb.cpp.i
+	$(MAKE) -f CMakeFiles/LagrangeInterpolation.dir/build.make CMakeFiles/LagrangeInterpolation.dir/lagrange_interp_nd_prb.cpp.i
 .PHONY : lagrange_interp_nd_prb.cpp.i
 
 lagrange_interp_nd_prb.s: lagrange_interp_nd_prb.cpp.s
@@ -174,7 +174,7 @@ lagrange_interp_nd_prb.s: lagrange_interp_nd_prb.cpp.s
 
 # target to generate assembly for a file
 lagrange_interp_nd_prb.cpp.s:
-	$(MAKE) -f CMakeFiles/LagrangeInterpolation_Plugin.dir/build.make CMakeFiles/LagrangeInterpolation_Plugin.dir/lagrange_interp_nd_prb.cpp.s
+	$(MAKE) -f CMakeFiles/LagrangeInterpolation.dir/build.make CMakeFiles/LagrangeInterpolation.dir/lagrange_interp_nd_prb.cpp.s
 .PHONY : lagrange_interp_nd_prb.cpp.s
 
 # Help Target
@@ -185,7 +185,7 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... LagrangeInterpolation_Plugin"
+	@echo "... LagrangeInterpolation"
 	@echo "... lagrange_interp_nd.o"
 	@echo "... lagrange_interp_nd.i"
 	@echo "... lagrange_interp_nd.s"

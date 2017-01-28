@@ -8,5 +8,22 @@ set(SOURCE_FILES
         lagrange_interp_nd.hpp
         lagrange_interp_nd_prb.cpp)
 
-#add_executable(LagrangeInterpolation ${SOURCE_FILES})
-add_library(LagrangeInterpolation_Plugin SHARED ${SOURCE_FILES})
+set(TARGET_PATH ~/Local/Boids/Assets/Plugins)
+
+set(CMAKE_SHARED_LIBRARY_PREFIX "")
+set(CMAKE_SHARED_LIBRARY_SUFFIX ".bundle")
+set(LIBRARY_OUTPUT_PATH ${TARGET_PATH})
+
+add_library(${PROJECT_NAME} SHARED ${SOURCE_FILES})
+
+# add_custom_command(TARGET ${PROJECT_NAME}
+#         POST_BUILD 
+#         COMMAND echo ooooo ${CMAKE_LIBRARY_PATH}
+#         WORKING_DIRECTORY ${CMAKE_HOME_DIRECTORY}/build
+#         DEPENDS ${PROJECT_NAME}
+#         )
+
+# add_dependencies(${PROECT_NAME} foo)
+
+
+
