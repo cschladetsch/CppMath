@@ -1,5 +1,6 @@
 # include <cstdlib>
 # include <iostream>
+# include <fstream>
 # include <cmath>
 # include <ctime>
 # include <cstring>
@@ -8,6 +9,19 @@ using namespace std;
 
 # include "lagrange_interp_nd.hpp"
 
+
+typedef void(* DebugCallback)(const char * str);
+DebugCallback gDebugCallback;
+
+void DebugInUnity(std::string message)
+{
+	if (gDebugCallback)
+	{
+		gDebugCallback(message.c_str());
+	}
+}
+
+
 struct V3
 {
   float x, y, z;
@@ -15,15 +29,34 @@ struct V3
 
 extern "C" {
 
+	void RegisterDebugCallback(DebugCallback callback)
+	{
+		if (callback)
+		{
+			gDebugCallback = callback;
+		}
+	}
+
   int HelloFromCpp()
   {
-//    cout << "test" << endl;
-    return 42;
+	  DebugInUnity("Hello from Cpp");
+    return 24;
   }
 
   int Entry2(V3 p[], int n)
   {
-    return 456;
+	auto file = ofstream("out.txt");
+	  file << p << endl;
+	  file << n << endl;
+	  file << sizeof(V3) << endl;
+	  float *q = reinterpret_cast<float *>(p);
+	  file << *q << endl;
+//	  for (int m = 0; m jjj
+//	  {
+//		  file << p[m].x << ", " << p[m].y << ", " << p[m].z << endl;
+//	  }
+	file.close();
+	  return n;
   }
 
   int Entry3(V3 *p)
@@ -72,6 +105,7 @@ double *cc_compute_points ( int n )
   double *x;
 
 	HelloFromCpp();
+//	Entry2(2);
 
   if ( n < 1 )
   {
